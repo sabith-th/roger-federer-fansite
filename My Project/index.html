@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Roger Federer</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/mystyle.css">
+  <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/modal.js"></script>
+  <script type="text/javascript">
+    $('#myModal').on('show.bs.modal', function (event) {
+      windows.alert("was here")
+      var button = $(event.relatedTarget) // Button that triggered the modal
+      var recipient = button.data('whatever') // Extract info from data-* attributes
+      // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+      // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+      var modal = $(this)
+      modal.find('.modal-title').text('Federer with '+recipient)
+      modal.find('.modal-body img').src("../images/seasons.jpg")
+      modal.find('.modal-footer').val("Federer at "+recipient)
+    })
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-1">
+        <img src="images/rflogo.jpg" class="img-responsive img-circle" style="margin-top:55px ;margin-left:15px" >
+      </div>
+      <div class="col-md-9">
+        <div class="page-header"><h1>Roger Federer</h1></div>
+        <h4>The Greatest Tennis Player Of All Time</h4>
+      </div>
+      <div class="col-md-2">
+        <img src="images/rfhead.jpg" class="img-responsive img-circle">
+      </div>
+    </div>
+    <div class="row">
+      <div class="navbar navbar-right navbar-inverse">
+        <ul class="nav navbar-nav">
+          <li><a href="bio.html">Bio</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="calendar.html">Calendar</a></li>
+          <li><a href="seasons.html">Seasons</a></li>
+          <li><a href="records.html">Records</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-md-offset-6">
+      <div class="btn-gruop btn-group-justified">
+        <a href="bio.html" class="btn btn-primary">Bio</a>
+        <a href="about.html" class="btn btn-primary">About</a>
+        <a href="calendar.html" class="btn btn-primary">Calendar</a>
+        <a href="seasons.html" class="btn btn-primary">Seasons</a>
+        <a href="records.html" class="btn btn-primary">Records</a>
+        <a href="gallery.html" class="btn btn-primary">Gallery</a>
+      </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-md-offset-6">
+      <ul class="nav nav-pills nav-justified">
+        <li role="presentation"><a href="bio.html">Bio</a></li>
+        <li role="presentation"><a href="about.html">About</a></li>
+        <li role="presentation"><a href="calendar.html">Calendar</a></li>
+        <li role="presentation"><a href="seasons.html">Seasons</a></li>
+        <li role="presentation"><a href="records.html">Records</a></li>
+        <li role="presentation"><a href="gallery.html">Gallery</a></li>
+      </ul>
+      </div>
+    </div>
+    <div class="row"><img src="images/banner.jpg" class="img-responsive" style="padding-right:15px;padding-left:15px;"></div>
+    <!--div class="row">
+        <div class="col-md-2" style="padding-right:0px"><img src="images/rf1.jpg" class="img-responsive"></div>
+        <div class="col-md-2" style="padding:0px"><img src="images/rf2.jpg" class="img-responsive"></div>
+        <div class="col-md-2" style="padding:0px"><img src="images/rf3.jpg" class="img-responsive"></div>
+        <div class="col-md-2" style="padding:0px"><img src="images/rf4.jpg" class="img-responsive"></div>
+        <div class="col-md-2" style="padding:0px"><img src="images/rf5.jpg" class="img-responsive"></div>
+        <div class="col-md-2" style="padding-left:0px"><img src="images/rf6.jpg" class="img-responsive"></div>
+    </div-->
+    <div class="row">
+      <div class="col-md-12">
+      <blockquote>
+        <p>In an era of specialists you're either a hard court specialist, a clay court specialist or a grass court specialist, or
+          you're Roger Federer.</p>
+          <footer>Jimmy Connors after Federer won Wimbledon 2007</footer>
+        </blockquote>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8">
+        <h3>Bio</h3>
+        <p>Roger Federer is a professional tennis player currently ranked 3 by the Association
+          of Tennis Professionals (ATP). Federer has won an open era
+          record 17 Men's Singles Grandslam titles and was ranked No.1 in the world for a record
+          302 weeks, including a record 237 consecutive weeks. Federer is considered the greatest
+          tennis player of all time by players, commentators and fans all around the world.
+        </p>
+        <a href="bio.html" class="btn btn-primary">Read More</a>
+      </div>
+      <div class="col-md-4">
+        <img src="images/bio.jpg" data-toggle="modal" data-target="#myModal"  class="img-responsive" data-whatever="wim">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <img src="images/records.jpg" class="img-responsive">
+      </div>
+      <div class="col-md-8">
+        <h3>Records</h3>
+        <p>Roger Federer has won an open record 17 Men's singles grandslams. Federer holds the record for
+          the most weeks at No.1 ranking (302 weeks), as well as most consecutive weeks as No.1 (237 weeks).
+          He has won a record 7 Wimbledon, 5 US Open, and 6 World Tour Finals (previously Masters Cup) including
+          record 5 consecutive titles at both Wimbledon and US Open.
+        </p>
+        <a href="records.html" class="btn btn-primary">Read More</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8">
+        <h3>Seasons</h3>
+        <p>Federer turned an ATP pro in 1998. He first won his grandslam at the All England Club in 2003.
+          Federer first became ATP World No.1 on February 2004 where he held his spot for a record 237 consecutive
+          weeks. Federer won 3 Grandslams each in the years 2004, 2006 and 2007 as well as reached all four grandslam
+          finals in 2006, 2007 and 2009. His 2006 season when he won 3 Slams (AO, Wim, US), reached the final at the other,
+           4 Masters 1000, Masters cup and reached the finals of 16 of 17 tournaments he played and a 92-5 W/L record is
+           considered one of the greatest tennis seasons of all time.
+        </p>
+        <a href="seasons.html" class="btn btn-primary">Read More</a>
+      </div>
+      <div class="col-md-4">
+        <img src="images/seasons.jpg" class="img-responsive">
+      </div>
+    </div>
+  </div>
+  <div class="copyright-left">
+    <p>Copyright 2015 STH. All rights reserved | Design by Sabith T H </p>
+  </div>
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel" style="color:black">Federer</h4>
+        </div>
+        <div class="modal-body">
+            <img src="images/bio.jpg" class="img-responsive">
+        </div>
+        <div class="modal-footer" style="color:black">
+            <p style="text-align:left"></p>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

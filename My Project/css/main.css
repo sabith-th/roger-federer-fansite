@@ -1,0 +1,171 @@
+body{
+  font-family: 'Lato', sans-serif;
+  font-size: 150%;
+}
+.header{
+  background-color: black;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.navbar{
+  margin-bottom: 0px;
+  border-color: white;
+  color: green;
+}
+.navbar-default .navbar-nav>li>a{
+  color:black;
+}
+.navbar-default{
+  background-color: white;
+}
+.banner-image{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.navigation-bar{
+  padding-right: 0px;
+}
+.copyright-left p{
+  /*background: #4D4D4D;*/
+  background: black;
+  color: white;
+  font-size: 14px;
+  margin: .4em 0 0 0;
+  padding-left: 100px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+.btn-primary{
+  color: #fff;
+  background-color: black;
+  border-color: cadetblue;
+}
+.btn .btn-primary a:hover{
+  color:white;
+  background-color:deepskyblue;
+}
+hr{
+    border: 0;
+    height: 0;
+    margin: 1px;
+    border-top: 3px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 5px solid rgba(255, 255, 255, 0.3);
+}
+.nav-pills {
+  border-bottom: 0px;
+  border-right: 1px solid #ddd;
+}
+.nav-pills li{
+  float: none;
+}
+.nav-pills li a{
+  border-right: 0px;
+}
+.navbox-title{
+  background-color: #ccccff;
+}
+.image {
+  position: relative;
+  width: 100%;
+}
+.image h5{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  margin: 0px;
+  font-size: 125%;
+}
+.image h5 span{
+  display: none;
+  color:white;
+  letter-spacing: -1px;
+  background: rgb(0,0,0);
+  background: rgba(0,0,0,0.7);
+  width: 100%;
+  text-align: center;
+  padding: 1px;
+}
+div.pictures {
+  margin: 5px;
+  position: relative;;
+  float: left;
+  background-position: 50% 50%;
+  background-repeat:   no-repeat;
+  background-size:     cover;
+  width:  275px;
+  height: 200px;
+  overflow: hidden;
+}
+div.pictures img:hover {
+    /*opacity: 0.75;*/
+    transform:scale(1.2);
+}
+div.pictures img{
+  transition: linear 0.4s all;
+  height: 200px;
+  width: 100%;
+}
+.video{
+  width: 320px;
+  height: 240px;
+}
+#trailer .modal-dialog {
+    margin-top: 200px;
+    width: 640px;
+    height: 480px;
+}
+#trailer-video {
+    width: 100%;
+    height: 100%;
+}
+.scale-media {
+    padding-bottom: 56.25%;
+    position: relative;
+}
+.scale-media iframe {
+    border: none;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: white;
+}
+.pictures >a>button{
+  position: absolute;
+  bottom: 0px;
+  right: 3px;
+  margin: 0px;
+}
+.table > tbody > tr > td{
+  vertical-align: inherit;
+}
+.panel-group > .panel-default > a >.panel-heading{
+  /*border-bottom:  1px solid #ddd;*/
+  border-top: 1px solid #ddd;
+  color: black;
+}
+.panel-group > .panel-default > a:hover, a:visited, a:link, a:active{
+  text-decoration: none;
+}
+.panel-group > .panel-default > a >.panel-heading:hover{
+  background-color: black;
+  color: white;
+}
+.panel-group > .panel-default > a >.active-tab{
+  background-color: black;
+  color: white;
+}
+table > tbody > tr > td > a:hover, a:visited, a:link, a:active{
+  text-decoration: none;
+  color: black;
+}
+.nav-style > li.active > a:focus{
+  color: white;
+  background-color: black;
+}
+.nav-style > li.active > a, .nav-style > li.active > a:hover,.nav-style > li.active > a:focus{
+  color: white;
+  background-color: black;
+}
